@@ -40,7 +40,6 @@ console.log(amodh);
 // alt of writing strings
 const amodhNew =`I'm ${firstName}, a ${year-birthYear} year old ${job}!`;
 console.log(amodhNew);
-*/
 
 
 // Taking Decisons:if/else Statements
@@ -63,3 +62,39 @@ if(birthYear<=2000){
    century=21;
 }
 console.log(century);
+
+
+// Type coversion 
+const inputYear='1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear)+18);
+
+console.log(Number('Jonas'));    // NaN is Not a Number
+console.log(typeof NaN);
+console.log(String(23),23);
+
+// type coercion
+console.log('I am' +23+ ' Years Old'); 
+console.log('23'-'10'-3);
+console.log('23'/'2');    
+
+let n='1'+1;
+n=n-1;
+console.log(n);
+
+
+// Truthy and Falsey  values in JavaScript
+
+console.log(Boolean(0));         // false
+console.log(Boolean(undefined));  // false
+console.log(Boolean(''));  // false
+console.log(Boolean(Jonas));          // true
+console.log(Boolean({}));            // true
+
+const money = 0;
+if(money) {
+    console.log("Don't spend it a;;!");
+}else{
+    console.log('You should get a job!');
+}
+*/
