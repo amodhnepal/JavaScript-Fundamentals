@@ -97,4 +97,42 @@ if(money) {
 }else{
     console.log('You should get a job!');
 }
+
+
+
+const age='18';
+if(age===18) console.log('You are an adult!(Strict)');
+
+if(age==18) console.log('You just became and adult(Loose)');   
+
+const favourite = prompt("What's your favourite number?");
+console.log(favourite);
+console.log(typeof favourite);
+if(favourite == 23){  //It will do type coercion so always use strict eqality operator i.e ===
+    console.log('Cool! 23 is an amazinmg number!');
+}
+if(favourite !==23) console.log('WHy not 7?');
 */
+
+const hasDriversLicense=true;
+const hasGoodVision =false;
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense );
+
+
+// if(hasDriversLicense && hasGoodVision){ 
+//     console.log('Get behind the wheel!');}
+// else{
+//     console.log('Someone else should drive');
+// }
+
+const isTired=false;
+console.log(hasDriversLicense && hasGoodVision && isTired); 
+
+if(hasDriversLicense && hasGoodVision && !isTired){ 
+    console.log('Get behind the wheel!');}
+else{
+    console.log('Someone else should drive');
+}
+
